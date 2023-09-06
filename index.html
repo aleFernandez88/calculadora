@@ -1,48 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="shortcut icon" href="./icons8-calculator-50.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
 </head>
 
 <body>
     <main>
-    <div class="calculadora">
-        <div id="resultado" class="pantalla" readonly>0</div>
-        <div class="btns">
-           
-                <button class="btn op backs">C</button>
+        <section class="calculadora">
+            <div id="resultado" class="pantalla" readonly>0</div>
+            <div class="btns">
+                <button id="c" class="btn op backs">C</button>
                 <button class="btn op">+</button>
                 <button class="btn op">-</button>
-                <button class="btn op backs">←</button>
-  
+                <button id="borrar" class="btn op backs">←</button>
+
                 <button class="btn number">7</button>
                 <button class="btn number">8</button>
                 <button class="btn number">9</button>
                 <button class="btn op">*</button>
-             
+
                 <button class="btn number">4</button>
                 <button class="btn number">5</button>
                 <button class="btn number">6</button>
                 <button class="btn op">/</button>
-               
+
                 <button class="btn number">1</button>
                 <button class="btn number">2</button>
                 <button class="btn number">3</button>
-                <button class="btn op equal">=</button>
-               
+                <button id="equal" class="btn op equal">=</button>
+
                 <button class="btn op">.</button>
                 <button class="btn number">0</button>
                 <button class="btn number backs">00</button>
-             
-
-        </div>
-    </div>
-</main>
+            </div>
+        </section>
+    </main>
+<script src="./main.js"></script>
 </body>
 
 </html>
