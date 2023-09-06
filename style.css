@@ -1,0 +1,110 @@
+:root{
+    --back:#12273e ;
+    --secondary-color: aliceblue;
+    --primary-color:#fefefe ;
+    --btn-main-1: #147084;
+    --btn-second-1: #745fa2;
+    --btn-third-1: #20dbd8;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(./fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: inter;
+}
+
+body {
+    background: -moz-linear-gradient(left, #0f0c29 0%, #302b63 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #0f0c29 0%, #302b63 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #0f0c29 0%, #302b63 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0f0c29', endColorstr='#302b63', GradientType=1);
+    /* IE6-9 */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px 0px #aaa7a7;
+    background-color: var(--back);
+}
+
+.pantalla {
+    height: 60px;
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+    background-color: #0f0c29;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 5px;
+    border: solid 1px var(--back);
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+}
+
+button:hover{
+    scale: 1.1;
+}
+
+.btn.number {
+    background-color: var(--btn-main-1);
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.btn.op {
+    background-color: var(--btn-second-1);
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.btn.backs {
+    background-color: var(--btn-third-1);
+}
+
+.btn.equal {
+    height: 120px;
+    grid-row: 4/6;
+    grid-column: 4/-1;
+}
